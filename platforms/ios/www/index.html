@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" class="platform-ios platform-cordova platform-webview">
+
+    <ion-pane>
+      
+      <ion-content class="back">
+      
+
+      
+        <input type="name" class="inputForm" placeholder="Name" style="height: 50px; margin-top: 10px;">
+
+        <input type="name" class="inputForm" placeholder="Email" style="height: 50px">
+
+        <input type="address" class="inputForm" placeholder="Contact No" style="height: 50px">
+
+        <input type="address" class="inputForm" placeholder="Address" style="height: 70px">
+
+        <label class="item item-input item-select">
+        <div class="input-label">
+           &nbsp;
+        </div>
+        <select >
+          <option selected>Choose Class</option>
+          <option >Morning</option>
+          <option>Day</option>
+          <option>Evening</option>
+        </select>
+        </label>
+
+        <label class="item item-input item-select">
+        <div class="input-label">
+           &nbsp;
+        </div>
+        <select>
+          <option selected>Choose Subject</option>
+          <option >English</option>
+          <option>Physics</option>
+          <option>Math</option>
+        </select>
+        </label>
+
+        <label class="item item-input item-select">
+        <div class="input-label">
+           &nbsp;
+        </div>
+        <select>
+          <option selected>Batch Timing</option>
+          <option >7 to 9 AM</option>
+          <option>10 to 12 PM</option>
+          <option>04 to 06 PM</option>
+        </select>
+        </label>
+
+       <button type="submit" class="inputForm" style= "background-color: #009800; height: 60px; color: #ffffff; font-size: 20px;">Add Student</button>
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
